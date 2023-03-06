@@ -1,0 +1,17 @@
+# /home/luca/.config/tmuxinator/peter.yml
+
+name: peter
+root: ~/
+
+windows:
+  - editore:
+      layout: even-horizontal
+      panes:
+        - clear
+        - clear
+  - lanciatore:
+      layout: even-horizontal
+      panes:
+        - clear
+        - htop 
+  - ktm:
