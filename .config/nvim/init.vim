@@ -35,6 +35,9 @@ Plug 'vim-airline/vim-airline-themes'
 " CoC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" AutoSave
+Plug '907th/vim-auto-save'
+
 call plug#end()
 
 
