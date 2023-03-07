@@ -1,0 +1,10 @@
+{
+  // Python 
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath":"/home/luca/.local/bin/black",
+  "python.linting.pylintEnabled": true,
+
+  // Coc preferences
+  "coc.preferences.formatOnType": true,
+  "coc.preferences.formatOnSaveFiletypes": ["python"],
+}

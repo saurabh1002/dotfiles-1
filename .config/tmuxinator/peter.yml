@@ -4,12 +4,12 @@ name: peter
 root: ~/
 
 windows:
-  - editore:
+  - vimmi:
       layout: even-horizontal
       panes:
         - clear
         - clear
-  - lanciatore:
+  - launchers:
       layout: even-horizontal
       panes:
         - clear

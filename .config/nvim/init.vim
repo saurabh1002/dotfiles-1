@@ -32,7 +32,17 @@ Plug 'davidhalter/jedi-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" CoC
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
+
+
+
+" --- CoC Config ---
+let g:coc_global_extensions = [
+    \ 'coc-pyright'
+\ ]
 
 
 
