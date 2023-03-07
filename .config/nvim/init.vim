@@ -4,9 +4,6 @@ call plug#begin()
 " A simple, easy-to-use Vim alignment plugin
 Plug 'junegunn/vim-easy-align'
 
-" Autocomplete
-Plug 'ycm-core/YouCompleteMe'
-
 " Parenthesis pairs
 Plug 'jiangmiao/auto-pairs'
 
@@ -46,6 +43,17 @@ call plug#end()
 let g:coc_global_extensions = [
     \ 'coc-pyright'
 \ ]
+" use <tab> to trigger completion and navigate to the next complete item
+" <tab> could be remapped by another plugin, use :verbose imap <tab> to check if it's mapped as expected.
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+inoremap <silent><expr> <Tab>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
 
 
