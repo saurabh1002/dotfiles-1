@@ -35,6 +35,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " AutoSave
 Plug '907th/vim-auto-save'
 
+" Python docstring
+Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
+
 call plug#end()
 
 
@@ -75,6 +78,12 @@ colorscheme gruvbox-material
 " --- AIRLINE THEME ---
 let g:airline_theme = 'gruvbox_material'
 let g:airline_left_sep = ''
+
+
+
+" --- Python docstring configuration
+let g:pydocstring_formatter = 'sphinx'
+let g:pydocstring_doq_path = '/home/luca/.local/bin/doq'
 
 
 
