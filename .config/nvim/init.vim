@@ -38,6 +38,9 @@ Plug '907th/vim-auto-save'
 " Python docstring
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 
+" Move consistently between windows in tmux and vim
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 
@@ -84,6 +87,7 @@ let g:airline_left_sep = ''
 " --- Python docstring configuration
 let g:pydocstring_formatter = 'sphinx'
 let g:pydocstring_doq_path = '/home/luca/.local/bin/doq'
+let g:pydocstring_enable_mapping = 0
 
 
 
@@ -92,10 +96,6 @@ nnoremap <Up> <NOP>
 nnoremap <Down> <NOP>
 nnoremap <Left> <NOP>
 nnoremap <Right> <NOP>
-nnoremap <C-h> <C-W>h
-nnoremap <C-j> <C-W>j
-nnoremap <C-k> <C-W>k
-nnoremap <C-l> <C-W>l
 
 
 
