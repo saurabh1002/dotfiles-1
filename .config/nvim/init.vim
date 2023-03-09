@@ -41,6 +41,9 @@ Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 " Move consistently between windows in tmux and vim
 Plug 'christoomey/vim-tmux-navigator'
 
+" NERD Tree
+Plug 'preservim/nerdtree' | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons' | Plug 'PhilRunninger/nerdtree-buffer-ops'
+
 call plug#end()
 
 
@@ -88,6 +91,16 @@ let g:airline_left_sep = ''
 let g:pydocstring_formatter = 'sphinx'
 let g:pydocstring_doq_path = '/home/luca/.local/bin/doq'
 let g:pydocstring_enable_mapping = 0
+
+
+
+" --- NERD Tree configuration
+nnoremap <C-n> :NERDTree<CR>
+" Start NERDTree. If a file is specified, move the cursor to its window.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 
 
