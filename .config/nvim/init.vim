@@ -121,5 +121,10 @@ nnoremap <Right> <NOP>
 
 
 
+" --- To Copy to Clipboard ---
+set clipboard=unnamedplus
+
+
+
 " --- FOR PREVIEW WINDOW (YouCompleteMe) ---
 set completeopt-=preview
