@@ -7,7 +7,7 @@
 
   // C++
   "cpp.formatting.provider": "clangformat",
-  "cpp.formatting.clangformatPath": "/usr/bin/clang-format",
+  "cpp.formatting.clangformatPath": "${workspaceFolder}/.clang-format",
   "cland.enabled": "true",
   "clangd.compilationDatabaseCandidates": ["${workspaceFolder}/build/", 
                                            "${workspaceFolder}",
