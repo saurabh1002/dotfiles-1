@@ -52,6 +52,11 @@ call plug#end()
 
 
 
+" --- Set Leader Key
+let mapleader ="\<space>"
+
+
+
 " --- CoC Config ---
 let g:coc_global_extensions = [
     \ 'coc-pyright'
@@ -114,6 +119,14 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+
+
+" --- For telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 
 
