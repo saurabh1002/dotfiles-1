@@ -22,9 +22,6 @@ Plug 'morhetz/gruvbox'
 " GruvBox Material theme
 Plug 'sainnhe/gruvbox-material'
 
-" Python autocomplete
-Plug 'davidhalter/jedi-vim'
-
 " Status line theme
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -124,6 +121,20 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 
+" --- CoC Autocompletion using TAB
+function! CheckBackSpace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackSpace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+
 
 " --- For telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
@@ -146,5 +157,3 @@ set clipboard=unnamedplus
 
 
 
-" --- FOR PREVIEW WINDOW (YouCompleteMe) ---
-set completeopt-=preview
