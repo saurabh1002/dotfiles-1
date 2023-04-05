@@ -13,6 +13,7 @@ ZSH_THEME="gnzh"
 # Preferred editor for local and remote sessions
 EDITOR="vim"
 VISUAL="vim"
+GIT_EDITOR="vim"
 
 
 
@@ -40,6 +41,7 @@ alias muori="sudo shutdown now"
 alias install="sudo apt install"
 alias update="sudo apt update && sudo apt dist-upgrade"
 alias mux="tmuxinator"
+alias meheref="rm -rf *"
 
 
 
