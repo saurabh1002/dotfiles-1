@@ -35,6 +35,7 @@ alias gs='git status'
 alias ga='git add --all'
 alias gc='git commit'
 alias gppb='git pull --rebase'
+alias prettygit='git log --all --decorate --oneline --graph'
 alias ktm="exit"
 alias dormi="gnome-screensaver-command -l"
 alias muori="sudo shutdown now"
