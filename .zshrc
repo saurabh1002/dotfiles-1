@@ -43,6 +43,7 @@ alias install="sudo apt install"
 alias update="sudo apt update && sudo apt dist-upgrade"
 alias mux="tmuxinator"
 alias meheref="rm -rf *"
+alias c="clear"
 
 
 
