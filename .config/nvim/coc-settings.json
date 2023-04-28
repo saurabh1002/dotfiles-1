@@ -13,7 +13,9 @@
                                            "${workspaceFolder}",
                                            "${workspaceFolder}/_skbuild/linux-x86_64-3.10/cmake-build",
                                            "${workspaceFolder}/python/_skbuild/linux-x86_64-3.10/cmake-build",
-                                           "/home/luca/source/gtsam/build/"],
+                                           "/home/luca/source/gtsam/build/",
+                                           "/home/luca/source/Open3D/build/",
+                                           "/home/luca/Workspace/ros_ws/build/"],
   "clangd.arguments": [
     "--background-index",
     "--clang-tidy",
