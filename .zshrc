@@ -36,14 +36,16 @@ alias ga='git add --all'
 alias gc='git commit'
 alias gppb='git pull --rebase'
 alias prettygit='git log --all --decorate --oneline --graph'
+alias cmb='cmake -Bbuild -DCMAKE_EXPORT_COMPILE_COMMANDS=1 && cmake --build build'
 alias ktm="exit"
 alias dormi="gnome-screensaver-command -l"
 alias muori="sudo shutdown now"
 alias install="sudo apt install"
 alias update="sudo apt update && sudo apt dist-upgrade"
 alias mux="tmuxinator"
-alias meheref="rm -rf *"
+alias meheref="rm -rf"
 alias c="clear"
+alias roscdhome="roscd && cd .."
 
 
 
