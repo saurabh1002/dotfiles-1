@@ -106,9 +106,10 @@ let g:pydocstring_enable_mapping = 0
 " --- NERD Tree configuration
 nnoremap <C-n> :NERDTreeFocus<CR>
 nnoremap <C-A-n> :NERDTreeToggle<CR>
-" Start NERDTree. If a file is specified, move the cursor to its window.
+
+" Start NERDTree when Vim is started without file arguments.
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
