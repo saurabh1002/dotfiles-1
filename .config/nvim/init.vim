@@ -76,7 +76,7 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
 
 " --- BEAUTIFY ---
-set relativenumber
+set number relativenumber
 set autoindent expandtab tabstop=2 shiftwidth=2
 
 
