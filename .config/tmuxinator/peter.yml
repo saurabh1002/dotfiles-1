@@ -4,14 +4,18 @@ name: peter
 root: ~/
 
 windows:
-  - vimmi:
-      layout: even-horizontal
+  - vimini:
+  - pranzers:
+      layout: main-vertical
       panes:
         - clear
-        - clear
-  - launchers:
-      layout: even-horizontal
-      panes:
-        - clear
-        - htop 
+        - clear 
   - ktm:
+      layout: tiled
+      panes:
+        - clear
+        - clear
+        - clear
+        - clear
+  - extra:
+  
