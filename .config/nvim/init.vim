@@ -150,7 +150,7 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " --- Infinite undo
 set undofile
-set undofile=~/.undo
+set undodir=~/.undo
 
 
 
