@@ -11,6 +11,7 @@ ZSH_THEME="gnzh"
 # --- OhMyZSH standard options ---
 
 # Preferred editor for local and remote sessions
+alias vim="nvim"
 EDITOR="vim"
 VISUAL="vim"
 GIT_EDITOR="vim"
@@ -57,15 +58,15 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # --- ROS ---
 
 # Load the ROS workspace
-source /opt/ros/noetic/setup.zsh
+# source /opt/ros/noetic/setup.zsh
 
 # My current ROS workspace
-source ~/Workspace/ros_ws/devel/setup.zsh
+# source ~/Workspace/ros_ws/devel/setup.zsh
 
 # When launching rtabmap_ros's nodes, if you have the error error while loading 
 # shared libraries..., try ldconfig or add the next line at the end of 
 # your ~/.bashrc to fix it:
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ros/noetic/lib/x86_64-linux-gnu
+# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ros/noetic/lib/x86_64-linux-gnu
 
 
 
@@ -80,4 +81,4 @@ export CUDA_HOME=/usr/local/cuda
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
 export PATH=/usr/local/cuda/bin:$PATH
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
