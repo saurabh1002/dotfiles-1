@@ -46,6 +46,7 @@ alias update="sudo apt update && sudo apt dist-upgrade"
 alias mux="tmuxinator"
 alias meheref="rm -rf"
 alias c="clear"
+alias casa="cd && c"
 alias roscdhome="roscd && cd .."
 
 
