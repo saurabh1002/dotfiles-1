@@ -21,3 +21,7 @@ vim +PlugInstall +qall
 # Install tmux plugin manager
 # To install the plugins press "prefix + I" in tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Install tmuxinator
+# IMPORTANT: for this you need yaourt installed
+yaourt --noconfirm tmuxinator
