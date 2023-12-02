@@ -19,4 +19,5 @@ url -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 vim +PlugInstall +qall
 
 # Install tmux plugin manager
+# To install the plugins press "prefix + I" in tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
