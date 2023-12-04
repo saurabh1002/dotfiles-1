@@ -4,8 +4,12 @@ name: peter
 root: ~/
 
 windows:
-  - vimini:
-  - pranzers:
+  - MainProject:
+      layout: fc46,246x70,0,0[246x56,0,0,26,246x13,0,57,30]
+      panes:
+        - z glass && clear && vim -c "vsplit"
+        - z glass && clear
+  - Explorator:
       layout: main-vertical
       panes:
         - clear
@@ -17,5 +21,9 @@ windows:
         - clear
         - clear
         - clear
-  - extra:
-  
+  - Paper:
+      layout: df48,246x70,0,0[246x58,0,0,74,246x11,0,59,80]
+      panes:
+        - z lobefaro2023ral && clear && vim -c "autocmd BufWritePost * make" lobefaro2023ral.tex
+        - z lobefaro2023ral && evince lobefaro2023ral.pdf&
+    

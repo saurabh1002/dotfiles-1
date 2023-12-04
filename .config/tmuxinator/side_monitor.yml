@@ -1,0 +1,31 @@
+# /home/luca/.config/tmuxinator/side_monitor.yml
+
+name: side_monitor
+root: ~/
+
+windows:
+  - monitor: 
+      layout: 9462,253x71,0,0{153x71,0,0,110,99x71,154,0,115}
+      panes:
+        - clear
+        - btop
+  - DDG:
+      layout: fc46,246x70,0,0[246x56,0,0,26,246x13,0,57,30]
+      panes:
+        - z differential-geometry && clear && vim -c "vsplit"
+        - z differential-geometry && clear
+  - Open3D:
+      layout: fc46,246x70,0,0[246x56,0,0,26,246x13,0,57,30]
+      panes:
+        - cd /home/luca/source/Open3D && clear && vim
+        - cd /home/luca/source/Open3D && clear
+  - KissICP:
+      layout: fc46,246x70,0,0[246x56,0,0,26,246x13,0,57,30]
+      panes:
+        - cd /home/luca/Workspace/kiss-icp && clear && vim
+        - cd /home/luca/Workspace/kiss-icp && clear
+  - JustATerminal:
+      - clear
+      
+  
+
