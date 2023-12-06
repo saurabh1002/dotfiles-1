@@ -8,8 +8,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # Make zsh default shell
 chsh -s /bin/zsh
 
-# Install tmuxinator
-
 # Clone my dotfiles
 git clone --bare git@github.com:l00p3/dotfiles.git
 
@@ -17,6 +15,10 @@ git clone --bare git@github.com:l00p3/dotfiles.git
 url -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
+
+# Install nodejs and npm for coc
+sudo pacman -Sy nodejs
+sudo pacman -Sy npm
 
 # Install tmux plugin manager
 # To install the plugins press "prefix + I" in tmux
