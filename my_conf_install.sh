@@ -15,6 +15,7 @@ git clone --bare git@github.com:l00p3/dotfiles.git
 url -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
+vim vim '+CocInstall coc-clangd' +qall # IMPORTANT: if this does not work, try CocInstall coc-clangd inside nvim
 
 # Install nodejs and npm for coc
 sudo pacman -Sy nodejs
